@@ -1,0 +1,166 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Covid-19 Survey Form</h1>
+    
+    <link rel="stylesheet" type="text/css" href="survey-form.css"/>
+
+    <p id="description" class="description text-center">
+      Thank you for taking the time to answer this questions
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What actually you wear when going out?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select what you wear</option>
+        <option value="student">Only Facemask</option>
+        <option value="job">Only Faceshield</option>
+        <option value="learner">Both facemask and faceshield</option>
+        <option value="preferNo">None of the Above</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Are you still celebrate Birthdays/Wedding/Anniversary during this Pandemic? </p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />It Depends</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What you do most during this Pandemic?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Facebook</option>
+        <option value="projects">Answering Modules</option>
+        <option value="community">Going Out with Friends </option>
+        <option value="openSource">Sleeping</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Do you work in any of these high risk occupations??
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Healthcare</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Assisted-living</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Military Institution</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Aged-care facility</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Other</label>
+      
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
